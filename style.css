@@ -1,0 +1,905 @@
+
+html, body{
+  overflow-x: hidden;
+  margin: 0px 0px;
+    height:100%;
+
+}
+
+.mainInner{
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.mainInner div{
+    display:table-cell;
+    vertical-align: middle;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+}
+#sidebarMenu {
+    z-index: 1;
+    height: 190px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    transform: translateY(-230px);
+    transition: transform 250ms ease-in-out;
+    background-color: #fff;
+    background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
+}
+.sidebarMenuInner{
+    color: pink;
+    margin:0;
+    padding:0;
+}
+.sidebarMenuInner li{
+    list-style: none;
+    color:#bd4c8c;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 14px;
+}
+.sidebarMenuInner li a{
+    color:#bd4c8c;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    margin-left: 40vw;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.sidebarMenuInner li a:hover{
+      color: pink;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: fixed;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 30px;
+    left: 15px;
+    height: 30px;
+    width: 30px;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color:#fff;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+
+#welcome{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #bd4c8c;
+  background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
+}
+
+#welcome {
+ text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
+  text-align: center;
+}
+#welcome h1 {
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 96px;
+  color:#fff;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  line-height: 100px;
+   margin-top: 18vw;
+}
+#welcome h5 {
+  font-size: 20px;
+  font-family: 'Advent Pro', sans-serif;
+  color:#fefefe;
+  top: 10vh;
+}
+
+
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.button-div{
+  position: fixed;
+   bottom: 0;
+   width: 100%;
+}
+
+.button {
+  bottom: 0;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: pink;
+  border: none;
+  box-shadow: 0 9px #ff4da6;
+}
+
+.button:hover {background-color:  #bd4c8c;}
+
+
+.navbar{
+   background-color: #bd4c8c;
+   background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
+   font-family: "Comic Sans MS" !important;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+}
+.navbar h1{
+  font-family: Cardo;
+  font-weight: bolder;
+  color: white;
+  font-size: 30px;
+}
+.nav-link-Itr{
+  display: inline-block;
+  position: fixed;
+  margin-top: 30px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+  .nav-link{
+    display: inline-block;
+    position: relative;
+    margin-left: 10vw;
+    margin-top: 30px;
+    font-size: 20px;
+    color: white;
+    font-family: Montserrat;
+    text-decoration: none;
+}
+
+  .nav-link:hover {opacity: 0.5;}
+.nav-link:active{color: pink;}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: white;
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  top: 20px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 100%;
+}
+
+
+
+@keyframes flow {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+
+
+.box{
+  border: solid 1px  #bd4c8c;
+  margin: 5vw 10vw;
+  background-color: #bd4c8c;
+  background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.head{
+  font-size: 2vw;
+  animation: flow 10s ease-in-out infinite;
+  background: linear-gradient(-60deg, purple, pink, lightblue);
+  background-size: 600%;
+  -webkit-background-clip: text;
+        -background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about{
+  font-size: 2vh;
+  line-height: 1.6;
+  font-family: Montserrat;
+  width: 50vw;
+  color: white;
+  border: none;
+  background: inherit;
+  font-size: 2vh;
+  animation: none;
+}
+
+
+.about a{
+
+  color: inherit;
+  font-weight: bold;
+}
+
+
+
+.background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: block;
+  z-index: -1;
+}
+
+
+  .header{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding: 0vw 2vw;
+    justify-content:flex-start;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #f2f2f2, white 80%, transparent 20%, transparent);
+  }
+
+  .meup{
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding: 0;
+  }
+
+  #meup{
+      display:flex;
+      width: 20vh;
+      border: solid 1px #fff;
+      border-radius: 50%;
+    }
+
+  #status{
+    margin-left: 6vw;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-content: space-between;
+  }
+
+  .status{
+    font-family: Montserrat;
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    margin-bottom: 1vh;
+    margin-right: 1.5vw;
+  }
+  .status i{
+    align-self: center;
+    font-size: 3vh;
+  }
+  .status p{
+    margin: 0 2px;
+    font-size: 3vh;
+  }
+
+
+
+  .title{
+    width: 100%;
+    font-family: Montserrat;
+    animation: flow 10s ease-in-out infinite;
+    background: linear-gradient(-60deg, purple, pink, lightblue);
+    background-size: 600%;
+    -webkit-background-clip: text;
+          -background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-content: flex-start;
+  }
+  .title i{
+    margin: 0;
+    margin-left: 4vw;
+    align-self: center;
+    font-size: 6vh;
+  }
+  .title p{
+    margin: 10px 40px;
+    font-size: 8vh;
+  }
+
+  .projects, .research{
+    color: #fff;
+    width: 50vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-content: space-around;
+  }
+  .projects a{
+    display: flex;
+    margin: 1vw;
+    border-bottom: solid 1px white;
+    padding-bottom: 0.5vh;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-content: flex-start;
+  }
+  .projects i{
+    color: white;
+    font-size: 3vh;
+  }
+  .projects p{
+    color: white;
+    font-family: monospace;
+    margin: 0 20px;
+    font-size: 2vh;
+  }
+
+  .research a{
+    display: flex;
+    margin: 0.5vw;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-content: flex-start;
+  }
+  .research p{
+    color: white;
+    font-weight: normal;
+    font-family: monospace;
+    margin: 0 20px;
+    font-size: 2vh;
+  }
+  .research i{
+    color: white;
+   font-size: 3vh;
+  }
+
+
+
+
+@media screen and (max-width:1000px){
+  #welcome h1 {
+    font-size: 50px;
+  }
+  #welcome h5 {
+    font-size: 10px;
+  }
+  #status{
+    margin-left: 2vw;
+    margin-top: 0;
+    flex-direction: column;
+  }
+  .status i{
+    font-size: 3vh;
+  }
+  .status p{
+    font-size: 2.5vh;
+  }
+  .title i{
+    font-size: 5vh;
+  }
+  .title p{
+    font-size: 5vh;
+  }
+  #meup{
+      width: 15vh;
+    }
+  .box{
+      margin: 0 5px 0 5px;
+  }
+  .about{
+    width: 80vw;
+    font-size: 2vw;
+  }
+  .projects, .research{
+    width: 90%;
+  }
+  .projects i,  .research i{
+    font-size: 2vw;
+  }
+  .projects p,  .research p{
+    font-size: 2vw;
+  }
+
+}
+
+@media screen and (max-width:900px){
+  .background{
+    display: none;
+  }
+  .status, .title{
+  -webkit-text-fill-color: pink;
+  background: none;
+  }
+  #social a{
+     -webkit-text-fill-color: pink;
+     background: #f2f2f2;
+   }
+
+   #contact p,  #indexcontact p{
+     -webkit-text-fill-color: pink;
+     background:#f2f2f2;
+   }
+}
+
+
+.row{
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.row>*
+{
+  padding: 10px;
+  flex: 0 0 32%;
+}
+
+.thumbnail{
+  background-color: white;
+  height: 100%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.2em;
+  padding: 0.5em;
+}
+
+.thumbnail img{
+   height: 300px;
+   width: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .description
+  {
+    flex: 40%;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .description
+  {
+    flex: 100%;
+  }
+
+}
+
+
+
+.content-section .thumbnail { position: relative; overflow: hidden; cursor: pointer; }
+.content-section .thumbnail * { transition: all .25s; }
+.content-section .thumbnail h4 { font-size: 19px; font-weight: 400; }
+.content-section .thumbnail p { line-height: 24px; }
+.content-section .thumbnail:hover h4, .content-section .thumbnail:hover p { color: #AFAFAF; }
+.content-section .thumbnail:hover img { opacity: 0.25;  }
+.content-section .thumbnail:after { font-family: 'FontAwesome'; content: '\f121'; color: #FFF; font-size: 48px; line-height: 80px; top: 70%; position: absolute; text-align: center; display: inline-block; width: 100%; transition: all .35s; opacity: 0; width: 86px; height: 86px; margin-left: auto; margin-right: auto; left: 0; right: 0; border-radius: 50%; background: transparent; border:3px solid transparent; }
+.content-section .thumbnail:hover:after { top: 25%; opacity: 1; color: #FFFFFF; background: #bd4c8c;; border:3px solid #FFFFFF; }
+.content-section { min-height: 100vh; padding-top: 70px; padding-bottom: 20px; }
+.content-section p.lead { font-family: 'Cardo', serif; font-size: 19px; line-height: 1.35em; margin-bottom: 25px; }
+.content-section p.lead em { font-size: 14px; }
+.content-section p em { font-size: 14px;}
+.content-section p mark em { font-size: inherit;}
+.content-section img.pull-right { border:1px solid #DFDFDF; margin-top: 140px;  }
+
+/* The Modal (background) */
+.description{
+  decoration: none;
+  border: none;
+  background: inherit;
+  font-family: inherit;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#SmartCity{
+  margin: 50px;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+hr.hrinresearch{
+  height: 30px;
+  border-style: solid;
+  background-color: #bd4c8c;
+  background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
+  border-color: #8c8b8b;
+  border-width: 1px 1px 1px 0;
+  border-radius: 20px;
+}
+hr.hrinresearch:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #8c8b8b;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width:800px;
+  margin:auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display:none
+}
+.mySlides figure{
+   padding: 4px;
+   margin: auto;
+}
+.mySlides figcaption{
+  background-color: White;
+  text-align: center;
+  padding: 2px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: gray;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color:black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+}
+.active-slides{
+  display:block;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: gray;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.Description{
+  margin-left: auto;
+   margin-right: auto;
+   position: relative;
+   width: 100%;
+   font-size: 20px;
+}
+
+
+#contact_page
+{
+  margin: 20vh 20vw 20vh 20vw;
+  padding: 20px 10px 10px 10px;
+  background: white;
+  border: solid 1px pink;
+  font-family: Arial;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #bd4c8c;
+}
+
+@media screen and (max-width: 1000px) {
+  #contact_page
+  {
+    margin: 150px 2vw 100px 2vw;
+  }
+
+}
+
+#mail_form{
+flex: 3 0 0;
+}
+#name{
+  width: 60%;
+  padding: 8px 5px;
+  margin: 8px 0;
+  border: none;
+  color: pink;
+  border-bottom: solid 3px pink;
+}
+#email{
+  width: 60%;
+  padding: 8px 5px;
+  margin: 8px 0;
+  border: none;
+  color: pink;
+  border-bottom: solid 3px pink;
+}
+#message{
+  vertical-align: middle;
+  border: solid pink 3px;
+  width: 80%;
+  padding-bottom: 10%;
+  margin: 8px 0;
+}
+#submit{
+color: gray;
+border: solid pink 3px;
+padding: 8px 10px;
+margin: 10px 2px 0px 2px;
+text-align: left;
+}
+#reset{
+color: gray;
+border: solid pink 3px;
+padding: 8px 10px;
+margin: 10px 2px 0px 0px;
+text-align: left;
+}
+
+input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+
+#social_list{
+  flex: 1 0 0;
+  color: #bd4c8c;
+  font-size: 15px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+#social_list .fa{
+  font-size: 5vh;
+  padding: 10px;
+  color: pink;
+}
+#social_list .iconify{
+  font-size: 7vh;
+  padding: 10px;
+  padding-left: 40px;
+  background: url('https://api.iconify.design/simple-icons:codecademy.svg?color=pink&width=3em&height=3em') no-repeat center center;
+}
+
+#social_list button{
+  background: inherit;
+  border: solid pink 3px;
+  border-bottom: none;
+}
+
+#social_list button:last-child{
+  background: inherit;
+  border: solid pink 3px;
+}
+
+#contact, #indexcontact{
+  width: 100%;
+  bottom: 0;
+  border-top: solid 1px silver;
+  background-color: #f2f2f2;
+  padding-top: 10px;
+  text-align: center;
+}
+#contact p,  #indexcontact p{
+  color: #fff;
+  font-family: monospace;
+  font-size: 2vh;
+  animation: flow 10s ease-in-out infinite;
+    background: linear-gradient(-60deg, silver, pink, lightblue);
+    background-size: 300%;
+    -webkit-background-clip: text;
+          -background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+ a{
+  text-decoration: none;
+}
+#social{
+  text-align: center;
+  animation: flow 10s ease-in-out infinite;
+  background: linear-gradient(-60deg, silver, pink, lightblue);
+  background-size: 300%;
+  -webkit-background-clip: text;
+        -background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#social .fa{
+  font-size: 40px;
+  padding: 10px;
+  color: #fff;
+}
