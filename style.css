@@ -21,7 +21,7 @@ html, body{
 }
 #sidebarMenu {
     z-index: 1;
-    height: 248px;
+    height: auto;
     position: absolute;
     left: 0;
     width: 100%;
@@ -40,7 +40,7 @@ html, body{
 }
 .sidebarMenuInner li{
     list-style: none;
-    font-size: 30px;
+    font-size: 25px;
     color:#bd4c8c;
     text-transform: uppercase;
     font-weight: bold;
