@@ -15,7 +15,6 @@ html, body{
 .mainInner div{
     display:table-cell;
     vertical-align: middle;
-    font-size: 15em;
     font-weight: bold;
     letter-spacing: 2px;
 }
