@@ -201,6 +201,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
    background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
    font-family: "Comic Sans MS" !important;
   width: 100%;
+  padding-bottom: 0;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -208,12 +209,18 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   flex-direction: row;
   z-index: 1;
 }
-.navbar h1{
-  font-family: Cardo;
-  font-weight: bolder;
-  color: white;
-  font-size: 30px;
+
+#logo img{
+  height: 80px;
 }
+#menu{
+  margin-left: 15%;
+  margin-bottom: 5px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .nav-link-Itr{
   display: inline-block;
   position: fixed;
@@ -225,8 +232,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   .nav-link{
     display: inline-block;
     position: relative;
-    margin-left: 10vw;
-    margin-top: 30px;
+    align-self:flex-end;
     font-size: 20px;
     color: white;
     font-family: Montserrat;
