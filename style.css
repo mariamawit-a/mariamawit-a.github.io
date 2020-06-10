@@ -53,7 +53,7 @@ html, body{
 }
 .sidebarMenuInner li a{
     color:#bd4c8c;
-    font-family: 'Advent Pro', sans-serif;;
+    font-family: 'Advent Pro', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
@@ -529,7 +529,11 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   color: #cc0099;
   border: solid 1px #cc0099;
   border-radius: 40%;
-  font-family: Montserrat; font-size: 32px; line-height: 72px; margin: 0 0 0 24px;
+  font-family:'Advent Pro', sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 72px;
+  margin: 0 0 0 24px;
   padding: 0 20px;
   position: relative;
 }
