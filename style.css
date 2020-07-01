@@ -806,13 +806,11 @@ hr.hrinresearch:before {
 
 #contact_page
 {
-  margin: 20vh 20vw 20vh 20vw;
-  padding: 20px 10px 10px 10px;
+  margin: 150px 450px 100px 350px;
+  padding: 20px 5px 10px 10px;
   background: white;
   border: solid 1px pink;
   font-family: Arial;
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   color: #bd4c8c;
 }
@@ -825,11 +823,8 @@ hr.hrinresearch:before {
 
 }
 
-#mail_form{
-flex: 3 0 0;
-}
 #name{
-  width: 60%;
+  width: 70%;
   padding: 8px 5px;
   margin: 8px 0;
   border: none;
@@ -837,7 +832,7 @@ flex: 3 0 0;
   border-bottom: solid 3px pink;
 }
 #email{
-  width: 60%;
+  width: 70%;
   padding: 8px 5px;
   margin: 8px 0;
   border: none;
@@ -871,34 +866,30 @@ input:focus, textarea:focus, select:focus{
     }
 
 #social_list{
-  flex: 1 0 0;
   color: #bd4c8c;
-  font-size: 15px;
-  text-align: right;
+  justify-content: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 #social_list .fa{
-  font-size: 5vh;
-  padding: 10px;
+  font-size: 25px;
   color: #d9d9d9;
 }
-#social_list .iconify{
-  font-size: 7vh;
-  padding: 10px;
-  padding-left: 40px;
-  background: url('https://api.iconify.design/simple-icons:codecademy.svg?color=%23d9d9d9&width=3em&height=3em') no-repeat center center;
+
+
+#social_list a{
+border-radius: 50%;
+padding: 8px;
+border: solid pink 1px;
+}
+
+#social_list a:hover{
+background-color: pink;
 }
 
 #social_list button{
   background: inherit;
-  border: solid pink 3px;
-  border-bottom: none;
-}
-
-#social_list button:last-child{
-  background: inherit;
-  border: solid pink 3px;
+  border: none;
 }
 
 #contact, #indexcontact{
