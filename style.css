@@ -210,6 +210,12 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   z-index: 1;
 }
 
+#logo{
+  background-color: pink;
+  background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
+	border:1px solid #fff;
+}
+
 #logo img{
   height: 80px;
 }
