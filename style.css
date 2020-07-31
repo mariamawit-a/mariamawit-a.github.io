@@ -219,6 +219,9 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 #logo img{
   height: 80px;
 }
+  #logo:hover {
+      background-color: #d158a1;
+  }
 
 #menu{
   margin-left: 15%;
