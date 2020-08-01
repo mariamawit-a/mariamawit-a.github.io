@@ -201,7 +201,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
    background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
    font-family: "Comic Sans MS" !important;
   width: 100%;
-  padding-bottom: 0;
+  line-height: 13px;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -828,7 +828,7 @@ hr.hrinresearch:before {
 @media screen and (max-width: 1000px) {
   #contact_page
   {
-    margin: 150px 2vw 100px 2vw;
+    margin: 400px 5vw 100px 5vw;
   }
 
 }
@@ -852,7 +852,7 @@ hr.hrinresearch:before {
 #message{
   vertical-align: middle;
   border: solid pink 3px;
-  width: 80%;
+  width: 90%;
   padding-bottom: 10%;
   margin: 8px 0;
 }
