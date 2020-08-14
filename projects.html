@@ -11,11 +11,6 @@
 </head>
 
 <style>
-  .navbar
-  {
-    line-height: 20px;
-    padding-bottom: 1px;
-  }
   body{
   background-color: White;
   background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
@@ -27,19 +22,20 @@
 
   <header>
   <div class="navbar">
-    <a id="logo" href="index.html"><img src="https://imagizer.imageshack.com/img924/4758/EOk5Xb.png"></a>
-  <div id="menu">
+  <div class="logo">
+    <a href="index.html"><i class="fa fa-angle-left"></i></a>
+  </div>
+  <div class="menu">
     <a class="nav-link nav-link-ltr" href="projects.html">Projects</a>
     <a class="nav-link nav-link-ltr" href="research.html">Research</a>
     <a class="nav-link nav-link-ltr" href="https://drive.google.com/file/d/1pJVWOV1yasg_zmuEzFz-DPwp1-5JhinA/view?usp=sharing" target="_blank">Resume</a>
-    <a class="nav-link nav-link-ltr" href="contacts.html">Contacts</a>
+    <!-- <a class="nav-link nav-link-ltr" href="contacts.html">Contacts</a> -->
   </div>
  </div>
  </header>
 
   <div id="projects" class="content-section">
 
-      <h2 class="projectType"><span>Applications</span></h2>
       <div class="row">
         <button id="descriptionA" class="description">
           <figure class="thumbnail thumbnailA">
@@ -68,66 +64,75 @@
             </figcaption>
           </figure>
         </button>
+        <button id="descriptionC" class="description">
+          <figure class="thumbnail thumbnailB">
+            <img style="width:100%" src="https://imagizer.imageshack.com/img924/5561/GINu2R.png">
+            <figurecaption class="caption">
+              <h4>Abyssinia coffee</h4>
+              <p>Product landing page build with HTML, CSS and JS</p>
+            </figurecaption>
+          </figure>
+        </button>
+        <button id="descriptionD" class="description">
+          <figure class="thumbnail thumbnailB">
+            <img style="width:100%" src="https://imagizer.imageshack.com/img923/6301/SRiXAD.png">
+            <figurecaption class="caption">
+              <h4>C.A.L.I Lips</h4>
+              <p>Mock webpage build with HTML, CSS and JS</p>
+            </figurecaption>
+          </figure>
+        </button>
+        <button id="descriptionF" class="description">
+          <figure class="thumbnail thumbnailB">
+            <img style="width:100%" src="https://imagizer.imageshack.com/img924/3614/Ax2B9g.png">
+            <figurecaption class="caption">
+              <h4>My Portfolio</h4>
+              <p>A website built with HTML, CSS and JS</p>
+            </figurecaption>
+          </figure>
+        </button>
+        <button id="descriptionG" class="description">
+          <figure class="thumbnail thumbnailB">
+            <img style="width:100%" src="https://imagizer.imageshack.com/img923/181/yqcJD0.png">
+            <figurecaption class="Survey Form">
+              <h4>Hawaii Cruise</h4>
+              <p>Survey form built with HTML and CSS</p>
+            </figurecaption>
+          </figure>
+        </button>
+        <button id="descriptionB" class="description">
+          <figure class="thumbnail thumbnailC">
+            <img style="width:100%" src="https://imagizer.imageshack.com/img924/5020/Q3u7pS.png">
+            <figurecaption class="caption">
+              <h4>Smart Modular Alternating Current Charger (SMACC)</h4>
+              <p>Engineering Design Project</p>
+            </figurecaption>
+          </figure>
+        </button>
+        <button id="descriptionI" class="description">
+          <figure class="thumbnail thumbnailD">
+            <img style="width:100%" src="https://imagizer.imageshack.com/img923/2553/OpIKWg.jpg">
+            <figcaption class="caption">
+              <h4>Leonardo Da Vinci's Bridge</h4>
+              <p>5-min Physics Project</p>
+            </figcaption>
+          </figure>
+        </button>
       </div>
 
     <!--Web-->
-  <h2 class="projectType"><span>Web development</span></h2>
-    <div class="row">
-      <button id="descriptionC" class="description">
-        <figure class="thumbnail thumbnailB">
-          <img style="width:100%" src="https://imagizer.imageshack.com/img924/5561/GINu2R.png">
-          <figurecaption class="caption">
-            <h4>Abyssinia coffee</h4>
-            <p>Product landing page build with HTML, CSS and JS</p>
-          </figurecaption>
-        </figure>
-      </button>
-      <button id="descriptionD" class="description">
-        <figure class="thumbnail thumbnailB">
-          <img style="width:100%" src="https://imagizer.imageshack.com/img923/6301/SRiXAD.png">
-          <figurecaption class="caption">
-            <h4>C.A.L.I Lips</h4>
-            <p>Mock webpage build with HTML, CSS and JS</p>
-          </figurecaption>
-        </figure>
-      </button>
-      <button id="descriptionF" class="description">
-        <figure class="thumbnail thumbnailB">
-          <img style="width:100%" src="https://imagizer.imageshack.com/img924/3614/Ax2B9g.png">
-          <figurecaption class="caption">
-            <h4>My Portfolio</h4>
-            <p>A website built with HTML, CSS and JS</p>
-          </figurecaption>
-        </figure>
-      </button>
-      <button id="descriptionG" class="description">
-        <figure class="thumbnail thumbnailB">
-          <img style="width:100%" src="https://imagizer.imageshack.com/img923/181/yqcJD0.png">
-          <figurecaption class="Survey Form">
-            <h4>Hawaii Cruise</h4>
-            <p>Survey form built with HTML and CSS</p>
-          </figurecaption>
-        </figure>
-      </button>
-    </div>
+    <!-- <div class="row">
+
+    </div> -->
 
     <!--Engineering-->
-    <h2 class="projectType"><span>Engineering Graphic Design</span></h2>
-    <div class="row">
-      <button id="descriptionB" class="description">
-        <figure class="thumbnail thumbnailC">
-          <img style="width:100%" src="https://imagizer.imageshack.com/img924/5020/Q3u7pS.png">
-          <figurecaption class="caption">
-            <h4>Smart Modular Alternating Current Charger (SMACC)</h4>
-            <p>Engineering Design Project</p>
-          </figurecaption>
-        </figure>
-      </button>
-    </div>
+    <!-- <h2 class="projectType"><span>Engineering Graphic Design</span></h2>
+
+    </div> -->
 
 
      <!--Physics-->
-     <h2 class="projectType"><span>Physics (JFF)</span></h2>
+     <!-- <h2 class="projectType"><span>Physics (JFF)</span></h2>
       <div class="row">
          <button id="descriptionI" class="description">
            <figure class="thumbnail thumbnailD">
@@ -147,7 +152,7 @@
              </figcaption>
            </figure>
          </button>
-      </div>
+      </div> -->
 
   </div>
 
@@ -438,16 +443,14 @@
 
 </body>
 
-<footer id="contact">
+<footer class="contact">
   <p>Built with HTML5/CSS3/JS &#124; Created by Mariamawit Jembere</p>
-  <div id="social">
+  <div class="social">
     <a href="https://www.linkedin.com/in/mariamawit-jembere-394559182/" target="_blank" class="fa fa-linkedin"></a>
     <a href="contacts.html" target="_blank" class="fa fa-google"></a>
     <a href="https://github.com/mariamawit-a" target="_blank" class="fa fa-github"></a>
     <a id="profile-link" href="https://www.freecodecamp.org/fcc6b457106-6657-4305-9ff6-fee6a99cdfb4" target="_blank"<i class="fa fa-free-code-camp"></i></a>
   </div>
-
-
 </footer>
 
 </html>

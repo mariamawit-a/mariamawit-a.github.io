@@ -30,22 +30,24 @@
     <div id="welcome">
       <div id="welcome_left">
           <div id="welcome_text">
-             <h1 id="title">WELCOME TO MY G&#9673;LDEN PORTFOLIO</h1>
-             <P>I’m an aspiring <span>Software Developer</span> with a deep passion for helping others, and using <span>Tech for social good</span>.
-               I am interested in harnessing the <span>power of software and data</span> to enable communities and address some of the <span>world’s social problems</span>:
-               education, poverty and human rights ☮️</P>
-             <P>I was born and raised in the capital of <span>Ethiopia</span>, Addis Abeba. Ever since my childhood, I fall in love with
-                the Physics of matters, the Biology of our ever-evolving ecosystem, the nature inspired Engineerings, and now,
-                 the <span>art of Computer Science</span> 😍</P>
-              <P>I moved to the US in 2016 in pursuit of a better education. I have earned my AS in <span>Computer Science</span> and
-                <span>Mathematics</span> from <span>SMC</span> and currently pursuing a BS in Computer Science with a specialization in Software Development at <span>UC Irvine</span> 👩🏾‍🎓</P>
-              <P>I have received several academic, leadership and need-based scholarships (+$10,000) during my time at SMC, and the distinction of
-                <span>Chancellor's Excellence Scholar</span>, one of the most prestigious award at UC Irvine 😬</P>
-              <P> When I am not in front of a monitor, you can find me in the kitchen attempting to recreate a Tasty recipe 👩🏾‍🍳</P>
+              <h1 id="title">WELCOME TO MY G&#9673;LDEN PORTFOLIO</h1>
           </div>
+          <div id="welcome_about">
+               <P>I’m an aspiring <span>Software Developer</span> with a deep passion for helping others, and using <span>Tech for social good</span>.
+                 I am interested in harnessing the <span>power of software and data</span> to enable communities and address some of the <span>world’s social problems</span>:
+                 education, poverty and human rights ☮️</P>
+               <P>I was born and raised in the capital of <span>Ethiopia</span>, Addis Abeba. Ever since my childhood, I fall in love with
+                  the Physics of matters, the Biology of our ever-evolving ecosystem, the nature inspired Engineerings, and now,
+                   the <span>art of Computer Science</span> 😍</P>
+                <P>I moved to the US in 2016 in pursuit of a better education. I have earned my AS in <span>Computer Science</span> and
+                  <span>Mathematics</span> from <span>SMC</span> and currently pursuing a BS in Computer Science with a specialization in Software Development at <span>UC Irvine</span> 👩🏾‍🎓</P>
+                <P>I have received several academic, leadership and need-based scholarships (+$10,000) during my time at SMC, and the distinction of
+                  <span>Chancellor's Excellence Scholar</span>, one of the most prestigious award at UC Irvine 😬</P>
+                <P> When I am not in front of a monitor, you can find me in the kitchen attempting to recreate a Tasty recipe 👩🏾‍🍳</P>
+            </div>
 
           <div class="button-div">
-            <button onclick="location.href = 'overview.html';"target="_blank" class="button">Overview</button>
+            <button onclick=check() class="button">Content</button>
           </div>
       </div>
       <div id="welcome_right">
@@ -53,7 +55,7 @@
           <img id="meup"src="https://imagizer.imageshack.com/img923/3562/VvyCj4.jpg">
         </div>
 
-        <div id="social">
+        <div id="welcome_social"class="social">
           <a href="https://www.linkedin.com/in/mariamawit-jembere-394559182/" target="_blank" class="fa fa-linkedin"></a>
           <a href="contacts.html" target="_blank" class="fa fa-google"></a>
           <a href="https://github.com/mariamawit-a" target="_blank" class="fa fa-github"></a>
@@ -62,11 +64,14 @@
 
         <div id="skills">
           <ul>
-            <li>Front end HTML, CSS,JS, EJS, Responsive web design, Material Design Lite, Bootstrap</li>
-            <li>back end JS, Node.JS/Express, No-SQL</li>
-            <li>frameworks  RESTful Routes, API  </li>
-            <li>libraries</li>
-            <li>Others Firebase, Git/GitHub, Postman</li> 
+            <li data-icon="‍💻"> <span>OOP languages</span> C++ Java Python Javascript
+            <li data-icon="🎨"> <span>Front end</span> HTML/CSS, EJS, Responsive Web Design, Material Design Lite</li>
+            <li data-icon="⚙️"> <span>Back end</span> Node.JS/Express, SQL(Novice)</li>
+            <li data-icon="⛏"> <span>Frameworks</span>  Bootstrap, RESTful Routes, APIs  </li>
+            <li data-icon="📚"> <span>Libraries</span> JavaFX, JQuery, Matplotlib, Beautiful Soap</li>
+            <li data-icon="📱"> <span>Mobile</span> Swift(Novice)</li>
+            <li data-icon="📈"> <span>Data Analysis</span> Python R(Novice) Excel</li>
+            <li data-icon="🚀"> <span>Others</span> Firebase, Git/GitHub, Postman</li>
           </ul>
         </div>
       </div>
@@ -79,17 +84,17 @@
 
 
 
-</script>
-
 <script>
-function openNav() {
-  document.getElementById("myNav").style.height = "100%";
-}
-
-/* Close */
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
-}
+  function check(){
+    if (document.getElementById("openSidebarMenu").checked)
+    {
+      document.getElementById("openSidebarMenu").checked = false;
+    }
+    else
+    {
+      document.getElementById("openSidebarMenu").checked = true;
+    }
+  }
 </script>
 <script src="type.js"></script>
 
