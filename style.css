@@ -299,7 +299,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 .navbar{
   background-color: var(--goldenrod);
   width: 100%;
-  line-height: 13px;
+  line-height: 1px;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -324,7 +324,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     color: var(--goldenrod);
 }
   .logo a{
-    decoration: none;
+    text-decoration: none;
     color: var(--goldenrod);
   }
   .logo:hover {
@@ -332,11 +332,10 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   }
 
 .menu{
-  margin-left: 15%;
-  margin-bottom: 5px;
-  width: 50%;
+  margin-bottom: 20px;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .nav-link-Itr{
@@ -350,7 +349,8 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     display: inline-block;
     position: relative;
     align-self:flex-end;
-    font-size: 25px;
+    font-size: 40px;
+    font-weight: bolder;
     color: white;
     text-decoration: none;
 }
@@ -669,7 +669,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   margin-bottom: 100px;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .row>*
@@ -734,12 +734,15 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 /* The Modal (background) */
 .description{
-  decoration: none;
+  text-decoration: none;
   outline: none;
   max-width: 500px;
   border: none;
   background: inherit;
   font-family: inherit;
+}
+figure img{
+  border-bottom: 1px solid var(--chocolate);
 }
 .modal {
   display: none; /* Hidden by default */
