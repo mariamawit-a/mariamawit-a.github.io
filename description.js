@@ -7,8 +7,7 @@ var modalD = document.getElementById("modalD");
 var modalE = document.getElementById("modalE");
 var modalF = document.getElementById("modalF");
 var modalG = document.getElementById("modalG");
-var modalH = document.getElementById("modalH");
-var modalI = document.getElementById("modalI");
+
 
 
 // Get the button that opens the modal
@@ -19,9 +18,7 @@ var desD = document.getElementById("descriptionD");
 var desE = document.getElementById("descriptionE");
 var desF = document.getElementById("descriptionF");
 var desG = document.getElementById("descriptionG");
-var desH = document.getElementById("descriptionH");
-// var desI = document.getElementById("descriptionI");
-// var desJ = document.getElementById("descriptionJ");
+
 
 
 
@@ -33,9 +30,7 @@ var spanD = document.getElementsByClassName("close")[3];
 var spanE = document.getElementsByClassName("close")[4];
 var spanF = document.getElementsByClassName("close")[5];
 var spanG = document.getElementsByClassName("close")[6];
-var spanH = document.getElementsByClassName("close")[7];
-// var spanI = document.getElementsByClassName("close")[8];
-// var spanJ = document.getElementsByClassName("close")[9];
+
 
 
 
@@ -61,15 +56,6 @@ modalF.style.display = "block";
 desG.onclick = function() {
 modalG.style.display = "block";
 }
-desH.onclick = function() {
-modalH.style.display = "block";
-}
-// desI.onclick = function() {
-// modalI.style.display = "block";
-// }
-// desJ.onclick = function() {
-// modalJ.style.display = "block";
-// }
 
 
 // When the user clicks on <span> (x), close the modal
@@ -94,28 +80,18 @@ modalF.style.display = "none";
 spanG.onclick = function() {
 modalG.style.display = "none";
 }
-spanH.onclick = function() {
-modalH.style.display = "none";
-}
-// spanI.onclick = function() {
-// modalI.style.display = "none";
-// }
-// spanJ.onclick = function() {
-// modalJ.style.display = "none";
-// }
+
 
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
 if (event.target == modal) {
-  // modalA.style.display = "none";
-  // modalB.style.display = "none";
-  // modalC.style.display = "none";
-  // modalD.style.display = "none";
-  // modalE.style.display = "none";
-  // modalF.style.display = "none";
-  // modalG.style.display = "none";
-  // modalH.style.display = "none";
-
+  modalA.style.display = "none";
+  modalB.style.display = "none";
+  modalC.style.display = "none";
+  modalD.style.display = "none";
+  modalE.style.display = "none";
+  modalF.style.display = "none";
+  modalG.style.display = "none";
 }
 }

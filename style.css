@@ -906,6 +906,43 @@ figure img{
    font-size: 20px;
 }
 
+#otrivia-gifs{
+  display: inline-flex;
+  width: 90%;
+  justify-content: space-evenly;
+}
+  #otrivia-gifs img{
+    width: 250px;
+    height: 500px;
+  }
+#otrivia-video{
+  margin: 20px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+  #otrivia-video iframe{
+    width: 90%;
+    height: 700px;
+  }
+#selam-gif, #snake-gif{
+  text-align: center;
+}
+  #selam-gif img, #snake-gif img{
+    position: relative;
+    width: 80%;
+    height: 40%;
+  }
+
+#aoj-gif{
+  text-align: center;
+}
+  #aoj-gif img{
+    position: relative;
+    width: 80%;
+    height: 40%;
+  }
+
 #SmartCity{
   margin: 50px;
   color: var(--chocolate);
